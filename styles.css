@@ -1,0 +1,320 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Google Button */
+.google-button {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    background: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3c4043;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.google-button:hover {
+    background: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
+
+.google-button svg {
+    margin-right: 8px;
+}
+
+/* Header */
+.app-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.app-header h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.02em;
+}
+
+.app-header .tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Services Section */
+.services-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.services-section h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin: 0 0 16px 0;
+}
+
+.section-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #666666;
+    text-align: center;
+    margin: 0 0 48px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+}
+
+/* Service Card */
+.service-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.service-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-image {
+    transform: scale(1.05);
+}
+
+.service-content {
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+}
+
+.service-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.6;
+    margin: 0;
+    flex: 1;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.contact-section h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin: 0 0 16px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-2px);
+}
+
+.contact-icon {
+    font-size: 24px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.contact-content h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 8px 0;
+}
+
+.contact-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #666666;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    background: #1a1a1a;
+    color: #ffffff;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.copyright {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #cccccc;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .google-button {
+        top: 16px;
+        right: 16px;
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    .app-header h1 {
+        font-size: 36px;
+    }
+
+    .app-header .tagline {
+        font-size: 18px;
+    }
+
+    .services-section {
+        padding: 60px 0;
+    }
+
+    .services-section h2 {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 32px;
+    }
+
+    .contact-section {
+        padding: 60px 0;
+    }
+
+    .contact-section h2 {
+        font-size: 28px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-section {
+        padding: 40px 0;
+    }
+
+    .services-section h2 {
+        font-size: 24px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+    }
+
+    .service-content {
+        padding: 20px;
+    }
+
+    .service-name {
+        font-size: 18px;
+    }
+
+    .service-description {
+        font-size: 13px;
+    }
+}
