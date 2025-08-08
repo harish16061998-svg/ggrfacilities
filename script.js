@@ -87,7 +87,7 @@ const services = [
 
 // Function to open Google in new tab
 function openGoogle() {
-    window.open('https://forms.gle/kUvE9zKPLPcvzJfx9', '_blank');
+    window.open('https://forms.gle/S33jPr8tpoCFFN8U6', '_blank');
 }
 
 // Function to create service cards
@@ -139,5 +139,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
 
 
